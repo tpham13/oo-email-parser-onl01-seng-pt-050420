@@ -28,6 +28,7 @@ class EmailAddressParser
   end 
   
   def parse(email_addresses)
+    array.email_addresses
     self.new.email_addresses.split(" "," ")
   end 
   
