@@ -28,7 +28,7 @@ class EmailAddressParser
   end 
   
   def parse(email_addresses)
-    email_addresses
+    email_addresses = @email_addresses.split(/[, ]/).uniq
     self.new.email_addresses.split(" "," ")
   end 
   
