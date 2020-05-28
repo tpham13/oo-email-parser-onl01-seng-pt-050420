@@ -4,21 +4,6 @@
 # or whitespace (' ').--strip 
 
 
-
-#class EmailAddressParser
-  
-  #attr_accessor :email_addresses
-  
-  #def initialize(parse)
-    #@parse = parse 
-  #end 
-  
-  #def parse(email_addresses)
-    #self.new = email_addresses.split(" ",",")
-  #end 
-  
-#end
-
 class EmailAddressParser
   
   attr_accessor :email_addresses
@@ -32,6 +17,5 @@ class EmailAddressParser
     email_addresses.reject! {|element| element.empty?}
     email_addresses
   end
-   
   
 end
