@@ -29,7 +29,7 @@ class EmailAddressParser
   
   def parse
     email_addresses = @email_addresses.split(/[, ]/).uniq
-    self.new.email_addresses.split(" "," ")
+    email_array.reject! {|element| element.empty?}
   end 
   
 end
